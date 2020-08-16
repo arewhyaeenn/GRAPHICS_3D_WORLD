@@ -150,17 +150,17 @@ class Vector
 
 		var threshold = 0.001;
 
-		if (Math.abs(v1.x - v2.x) > threshold)
+		if (Math.abs(v1.x - v2.x) > threshold || isNaN(Math.abs(v1.x - v2.x)))
 		{
 			return false;
 		}
 		
-		if (Math.abs(v1.y - v2.y) > threshold)
+		if (Math.abs(v1.y - v2.y) > threshold || isNaN(Math.abs(v1.y - v2.y)))
 		{
 			return false;
 		}
 		
-		if (Math.abs(v1.z - v2.z) > threshold)
+		if (Math.abs(v1.z - v2.z) > threshold || isNaN(Math.abs(v1.z - v2.z)))
 		{
 			return false;
 		}

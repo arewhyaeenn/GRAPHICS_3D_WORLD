@@ -125,22 +125,22 @@ class Quaternion
 
 		var threshold = 0.001;
 
-		if (Math.abs(q1.w - q2.w) > threshold)
+		if (Math.abs(q1.w - q2.w) > threshold || isNaN(Math.abs(q1.w - q2.w)))
 		{
 			return false;
 		}
 		
-		if (Math.abs(q1.x - q2.x) > threshold)
+		if (Math.abs(q1.x - q2.x) > threshold || isNaN(Math.abs(q1.x - q2.x)))
 		{
 			return false;
 		}
 		
-		if (Math.abs(q1.y - q2.y) > threshold)
+		if (Math.abs(q1.y - q2.y) > threshold || isNaN(Math.abs(q1.y - q2.y)))
 		{
 			return false;
 		}
 		
-		if (Math.abs(q1.z - q2.z) > threshold)
+		if (Math.abs(q1.z - q2.z) > threshold || isNaN(Math.abs(q1.z - q2.z)))
 		{
 			return false;
 		}
